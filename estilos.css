@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: rgba(0,0,0,1);
+}
+table{
+	margin-top: 80px;
+	height: 100%;
+
+}
+button{
+	width:240px;
+	height:200px;
+	font-size: 50px;
+
+}
+.s{
+	margin-top: -200px;
+	margin-left: 4px;
+	height: 400px;
+	position: absolute;
+	background: #337EFE;
+	color: white;
+}
+.e{
+	width: 484px;
+	color: white;
+	background: #FE8826;
+}
+.c{
+	background: #FE0000;
+	color: white;
+}
+.r{
+	background: #337EFE;
+	color: white;
+}
+.po{
+	background: #337EFE;
+	color: white;
+}
+.di{
+	background: #337EFE;
+	color: white;
+}
+input{
+	margin-top: 20px;
+	width: 970px;
+	height: 400px;
+	font-size: 100px;
+}

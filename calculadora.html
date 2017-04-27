@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet"  type="text/css" href="estilos.css">
+</head>
+<body>
+<div>
+	<input type="text" id="screen">
+</div>
+	<table>
+	<tr><td>
+	<button style="background: #4D4D4D; color: white;" onclick="change()">
+		<u>+</u>
+	</button>
+	<button style="background: #4D4D4D; color: white;" onclick="parent1()">
+		(
+	</button>
+	<button style="background: #4D4D4D; color: white;" onclick="parent2()">
+		)
+	</button>
+	<button style="background: #4D4D4D; color: white;" onclick="codigo()">
+		*
+	</button>
+	</td></tr>
+	<tr><td>
+	<button onclick="siete()">
+		7
+	</button>
+	<button onclick="ocho()">
+		8
+	</button>
+	<button value="9" onclick="nueve()">
+		9
+	</button>
+	<button class="di" value=" / " onclick="entre()">
+		/
+	</button>
+	</td></tr>
+	<tr><td>
+	<button onclick="cuatro()">
+		4
+	</button>
+	<button onclick="cinco()">
+		5
+	</button>
+	<button onclick="seis()">
+		6
+	</button>
+	<button class="po" onclick="multip()">
+		x
+	</button>
+	</td></tr>
+	<tr><td>
+	<button onclick="uno()">
+		1
+	</button >
+	<button onclick="dos()">
+		2
+	</button>
+	<button onclick="tres()">
+		3
+	</button>
+	<button class="r" value=" - " onclick="resta()" >
+		-
+	</button>
+	</td></tr>
+	<tr><td>
+	<button onclick="cero()">
+		0
+	</button>
+	<button onclick="punto()">
+		.
+	</button>
+	<button onclick="porcent()">
+		%
+	</button>
+	</td></tr>
+	
+	<tr><td>
+	<button class="c" onclick="c()">
+		C
+	</button>
+	<button class="e" onclick="realizar()">
+		=
+	</button>
+	<button class="s" value=" + " onclick="suma()">
+		+
+	</button>
+	</td></tr>
+	</table>
+</body>
+<script type="text/javascript">
+function realizar(){
+		var op = document.getElementById("screen").value;
+		var resultado = eval(op);
+		document.getElementById("screen").value = resultado;
+	}
+	function c(){
+    	document.getElementById("screen").value="";
+    }
+    function uno()
+  	{
+   	document.getElementById("screen").value=document.getElementById("screen").value+"1";
+   	
+   	}
+   	function dos()
+   	{
+    document.getElementById("screen").value=document.getElementById("screen").value+"2";
+    
+	}
+	function tres()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"3";
+	
+	}
+	function cuatro()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"4";
+	
+	}
+	function cinco()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"5";
+	
+	}
+	function seis()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"6";
+	
+	}
+	function siete()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"7";
+	
+	}
+	function ocho()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"8";
+	
+	}
+	function nueve()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"9";
+	
+	}
+	function cero()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"0";
+	
+	}
+	function parent1()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"(";
+	}
+	function parent2()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+")";
+	}
+	function entre()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"/";
+	}
+	function multip()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"*";
+	}
+	function resta()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"-";
+	}
+	function sumar()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"+";
+	}
+	function punto()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+".";
+	}
+	function porcent()
+	{
+	document.getElementById("screen").value=document.getElementById("screen").value+"%";
+	}
+</script>
+</html>
